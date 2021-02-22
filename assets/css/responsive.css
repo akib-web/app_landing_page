@@ -1,0 +1,417 @@
+/* ==========================================================================
+  responsive style
+   ========================================================================== */
+
+@media (min-width: 992px) {
+    .logo {
+        padding: 0;
+    }
+
+    .sticky-wrapper {
+        position: absolute;
+        width: 100%;
+        z-index: 999999;
+    }
+
+    .hero {
+        padding-bottom: 74px;
+    }
+
+    .hero h1 {
+        padding-right: 120px;
+    }
+
+    .hero p {
+        padding-right: 210px;
+    }
+
+    .hero img {
+        padding-top: 170px;
+    }
+
+    .why-use {
+        margin-top: 74px;
+        padding-bottom: 60px;
+    }
+
+    .why-use h2 {
+        margin-bottom: 100px;
+    }
+
+    /* .mobile-tab {
+        background: url('../imgs/mobile-tab-hover-2.svg') no-repeat;
+        width: 100%;
+        height: 100vh;
+    } */
+    /* .mobile-tab:hover {
+        background: url('../imgs/mobile-tab-hover-1.svg') no-repeat;
+    } */
+    .apps-user-tab {
+        margin-top: 90px;
+    }
+
+    .app-user img {
+        /*! margin-top: 22.1833px; */
+        margin-right: 14px;
+    }
+
+    .app-user-content {
+        margin-left: 14px;
+    }
+
+    .app-user-content h4 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .app-user {
+        margin-left: 20px;
+        padding-top: 22.183px;
+    }
+
+    .start-trial {
+        /*! padding: 0px 95px 0px 95px; */
+    }
+
+    .apps-feature {
+        padding-top: 60px;
+    }
+
+    .apps-feature .swiper-container::after,
+    .apps-screenshots .swiper-container::after {
+        content: url('../imgs/slider/phone.png');
+        position: absolute;
+        margin-top: 5px;
+        z-index: 99999;
+    }
+
+    .stay-email-box form input {
+        width: 70%;
+    }
+
+    .stay-email-box form i {}
+
+    /* ----------------screen-shots slider------------ */
+    .apps-feature .swiper-wrapper .swiper-slide {
+        transform: scaleY(.65);
+        transition: .3s all ease;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-prev {
+        transform: scaleY(.7);
+        transition: .3s all ease;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-active {
+        transform: scaleY(.8);
+        transition: .3s all ease;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-next {
+        transform: scaleY(.9);
+        transition: .3s all ease;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-next+.swiper-slide {
+        transform: scale(1.05, 1.02);
+        transition: .3s all ease;
+        left: -13px;
+    }
+}
+
+@media (max-width: 780px) {
+    .start-trial {
+        padding: 0px 70px 0px 70px;
+    }
+
+    .start-trial p {
+        font-size: 12px;
+    }
+
+    .start-trial h2 {
+        font-size: 16px;
+    }
+
+    .start-trial a.appo-btn {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .logo img {
+        width: 40%;
+        transition: .2s all ease-in-out;
+    }
+
+    .is-sticky .logo img {
+        width: 40%;
+    }
+
+    header .mean-container a.meanmenu-reveal {
+        margin-top: -55px;
+        transition: .2s all ease-in-out
+    }
+
+    .is-sticky .mean-container a.meanmenu-reveal {
+        margin-top: -55px;
+    }
+
+    .start-trial {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .start-trial p {
+        font-size: 10px;
+    }
+
+    .start-trial h2 {
+        font-size: 12px;
+    }
+
+    .start-trial a.appo-btn {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .hero h1 {
+        /* font-size: 26px; */
+        margin-top: 50px;
+    }
+
+    .hero img {
+        margin-top: 50px;
+    }
+
+    /* ==========stay email box========== */
+
+
+    .stay-email-box form i {
+        left: 5%;
+        font-size: 12px;
+    }
+
+    .stay-email-box form input {
+        padding-left: 30px;
+        font-size: 12px;
+    }
+
+    .appo-btn {
+        padding: 6.5px 18px;
+        font-size: 12px;
+    }
+
+    /* ----------------stay email box end--------------- */
+
+    .why-use {
+        margin-top: 50px;
+    }
+
+    .apps-feature {
+        padding-top: 50px;
+    }
+
+    .mobile-tab img {
+        display: none;
+    }
+
+    .how-works {
+        padding-top: 57.5px;
+        padding-bottom: 25px;
+    }
+
+    .pricing-table {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* header {
+        background-color: transparent;
+    } */
+    .awesome-clients .tns-nav {
+        bottom: -15px;
+        /*! right: 0%; */
+    }
+
+    #leatest-post .swiper-button-prev,
+    #leatest-post .swiper-button-next {
+        display: none;
+    }
+
+    .underline::after {
+
+        display: none;
+
+    }
+
+    .dates-line::after,
+    .category-line::after {
+        display: none;
+    }
+
+    .comment img {
+        width: 15%;
+    }
+
+    .comment h3 {
+        margin-bottom: 50px;
+    }
+    .hero-3 h1{
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    .comnt-box {
+        padding: 0px 25px;
+        margin-left: 25px;
+        margin-top: -15px;
+        margin-bottom: 30px;
+    }
+
+    .comnt-box .media-body>a {
+        margin-bottom: 20px;
+    }
+
+    .comnt-box .media-body .media-body {
+        margin-top: -18px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .comnt-box p {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .comment form button {
+        margin-bottom: 20px;
+    }
+    .hero-video {
+        visibility: hidden;
+    }
+
+    .pop-up-play {
+        width: 35px;
+        height: 35px;
+    }
+
+    .pop-up-play i {
+        font-size: 12px;
+    }
+
+    .hero-3 {
+        padding-bottom: 10px;
+    }
+
+    .apps-screenshots {
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    .swiper-container {
+        padding: 50px 0;
+
+    }
+
+    .footer-logo img {
+        width: 50%;
+    }
+
+    .awesome-clients {
+        margin-top: 10px;
+    }
+
+    .awesome-clients .awesome-slider+div>img {
+        margin-top: 35px;
+    }
+
+    .download-app {
+        background-size: 100%;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1200px) {
+    .start-trial {
+        /* padding: 0px 95px 0px 95px; */
+    }
+
+    .start-trial p {
+        font-size: 12px;
+    }
+
+    .start-trial h2 {
+        font-size: 16px;
+    }
+
+    .start-trial a.appo-btn {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .apps-feature .swiper-wrapper .swiper-slide {
+        transform: scale(1.3, .7);
+        transition: .3s all ease;
+        left: 3%;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-prev {
+        transform: scale(1.3, .8);
+        transition: .3s all ease;
+        left: 0%;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-active {
+        transform: scale(1.3, 1);
+        transition: .3s all ease;
+        left: -3%;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-next {
+        transform: scale(1.3, 1.2);
+        transition: .3s all ease;
+        left: -4%;
+    }
+
+    .apps-feature .swiper-wrapper .swiper-slide-next+.swiper-slide {
+        transform: scale(1.3, 1.25);
+        transition: .3s all ease;
+        left: -3.5%;
+        bottom: 1%;
+    }
+}
+
+@media (max-width: 768px) {}
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    /* ==========stay email box========== */
+    .tns-controls button[data-controls="next"] {
+        top: 100%;
+        left: 55%;
+    }
+
+    .tns-controls button[data-controls="prev"] {
+        left: 30%;
+        top: 100%;
+    }
+
+    .app-user-content::before {
+        display: none;
+    }
+
+    .app-user:hover .app-user-content::before,
+    .ui-state-active .app-user-content::before {
+        visibility: hidden;
+    }
+
+    .apps-user-tab {
+        border-left: none;
+    }
+
+    .swiper-button-prev i,
+    .swiper-button-next i {
+        display: none;
+    }
+}

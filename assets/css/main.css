@@ -1,0 +1,1600 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ==========================================================================
+  TypoGrapphy
+   ========================================================================== */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2e2e2e;
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+span.common,
+.commn {
+    color: #39bced;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+/* ==========================================================================
+    Common style
+   ========================================================================== */
+
+.media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.appo-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 11.5px 42px;
+    color: #ffffff;
+    background: #1e5799;
+    background: -moz-linear-gradient(left, #39bced 0%, #22499c 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #39bced 0%, #22499c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #39bced 0%, #22499c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#39bced', endColorstr='#22499c', GradientType=1);
+    /* IE6-9 */
+    border-radius: 22.5px;
+    cursor: pointer;
+}
+
+
+.appo-btn:hover {
+    background: #39bced;
+}
+
+.appo-btn-inverse {
+    display: inline-block;
+    text-decoration: none;
+    padding: 11.5px 42px;
+    color: #ffffff;
+    background: #39bced;
+    border-radius: 22.5px;
+    /*! transition: all .2s ease-in-out; */
+}
+
+.appo-btn-inverse:hover {
+    background: -moz-linear-gradient(left, #39bced 0%, #22499c 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #39bced 0%, #22499c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #39bced 0%, #22499c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#39bced', endColorstr='#22499c', GradientType=1);
+    /* IE6-9 */
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+
+/* ==========================================================================
+    Header
+   ========================================================================== */
+/* ---------sticky-meanu----------- */
+.logo {
+    padding: 17px 0px;
+}
+
+.logo img {
+    transition: all .2s ease-in-out;
+}
+
+.is-sticky .logo img {
+    width: 140px;
+}
+
+.main-menu ul {
+    padding: 0;
+    margin: 0 15px 0 0;
+}
+
+.main-menu ul a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #2e2e2e;
+    padding: 30px 12.5px;
+}
+
+.main-menu ul a:hover,
+.main-menu ul a:focus {
+    color: #39bced;
+}
+
+.main-menu ul a.active {
+    color: #39bced;
+}
+
+header {
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+}
+
+.is-sticky header .main-menu ul a {
+    padding: 18px 12.5px;
+}
+
+.is-sticky header {
+    background-color: #ffffff;
+    transition: all .2s ease-in-out;
+}
+
+/* ---------sticky-meanu----------- */
+
+
+/* ------------mean-menu------------ */
+.mean-nav {
+    position: absolute;
+}
+
+/* ------------dropdown-menu---------- */
+.main-menu ul li ul {
+    position: absolute;
+    background: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s all ease-in-out;
+}
+
+.main-menu ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-menu ul li ul a,
+.is-sticky header .main-menu ul ul a {
+    padding: 10px 20px;
+}
+
+/* ==========================================================================
+  Hero banner style
+   ========================================================================== */
+/* --------------Appo home-page-1----------- */
+.hero {
+    width: 100%;
+    background: url('../imgs/svg/hero-bg-2.svg') top right no-repeat, url('../imgs/svg/hero-bg-1.svg')right top -22px no-repeat;
+
+    background-size: 100%;
+}
+
+/* ---------------Appo home-page-1 end----------------- */
+
+
+/* --------------Appo home-page-2----------- */
+
+.hero-2 {
+    width: 100%;
+    /*! background: url('../imgs/background/hero-bg.png'); */
+    margin-bottom: 0;
+}
+
+.hero-2 .overlay {
+    background-image: -webkit-linear-gradient(30deg, rgba(34, 73, 156, .8) 0%, rgba(57, 188, 237, .8) 100%);
+    background-image: -o-linear-gradient(30deg, rgba(34, 73, 156, .8) 0%, rgba(57, 188, 237, .8) 100%);
+    background-image: linear-gradient(120deg, rgba(34, 73, 156, .8) 0%, rgba(57, 188, 237, .8) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-2 img {
+}
+
+.skewed-bg {
+    padding: 300px 0 30px 0;
+    -webkit-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg) translateY(-250px);
+}
+
+.skewed-bg .content {
+    -webkit-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
+
+/* ---------------Appo home-page-2 end----------------- */
+
+
+/* ---------------Appo home-page-3----------------- */
+/* ============ripple button========== */
+.hero-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35%;
+    padding-top: 10%;
+}
+
+.hero-video>span {
+    color: white;
+    margin-right: 20px;
+}
+
+.pop-up-play {
+    border: 1px solid rgba(34, 73, 156, 0.6);
+    background-color: rgba(34, 73, 156, 0.6);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    line-height: 70px;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+    -webkit-transition: .5s linear;
+}
+
+.pop-up-play:hover {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: rgb(34, 73, 156);
+}
+
+@keyframes ripple {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(34, 73, 156, 0.4), 0 0 0 10px rgba(34, 73, 156, 0.2), 0 0 0 20px rgba(34, 73, 156, 0.2);
+        box-shadow: 0 0 0 0 rgba(34, 73, 156, 0.4), 0 0 0 10px rgba(34, 73, 156, 0.2), 0 0 0 20px rgb(34, 73, 156, 0.2);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(34, 73, 156, 0.4), 0 0 0 20px rgba(34, 73, 156, 0.2), 0 0 0 25px rgba(34, 73, 156, 0);
+        box-shadow: 0 0 0 10px rgb(34, 73, 156, 0.4), 0 0 0 20px rgb(34, 73, 156, 0.2), 0 0 0 25px rgb(34, 73, 156, 0);
+
+    }
+}
+
+/* ============ripple button end========== */
+
+
+.hero-3 {
+    width: 100%;
+    background: url('../imgs/background/topbg-h3.png') no-repeat top;
+    padding-bottom: 200px;
+    height: auto;
+    background-size: 130%;
+}
+
+.hero-3>h1 {
+    color: black;
+}
+
+.banner-content {
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.hero-3 .stay-email-box {
+    padding-left: 0;
+}
+
+.hero-3 .stay-email-box>form {
+    margin-left: 0%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.hero-3 .stay-email-box form>input {
+    width: 50%;
+    margin-left: 0px;
+}
+
+/* ---------------Appo home-page-3 end----------------- */
+
+/* ================Hero-blog banner ============== */
+
+
+.hero-blog {
+    background: url('../imgs/background/blog-list-bg.png') no-repeat center;
+    background-size: cover;
+    padding: 210px 0 130px 0;
+    position: relative;
+}
+
+.hero-blog::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 242, 242);
+    opacity: 0.902;
+    top: 0;
+    left: 0;
+}
+
+.hero-blog ul li>a {
+    color: #2e2e2e;
+}
+
+.hero-blog ul li i {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.hero-blog ul.breadcrumb {
+    background: transparent;
+    text-align: center;
+}
+
+.hero-blog .active {
+    color: #45c0ed !important;
+}
+
+/* ================Hero-blog banner end============== */
+
+/* ==========================================================================
+    Hero-banner End
+   ========================================================================== */
+
+/* ==========================================================================
+  Blog-list
+   ========================================================================== */
+.blog-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blog-list h3 {
+    color: #393939;
+}
+
+.pagination {
+    position: relative;
+    z-index: 999999;
+}
+
+.pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e1e0e0;
+    background-color: #ffffff;
+    margin: 0 10px 0 10px;
+}
+
+.pagination li a {
+    color: #39bced;
+}
+
+.pagination li:hover {
+    background-color: #39bced;
+}
+
+.pagination li:hover>a {
+    color: white;
+}
+
+.pagination::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 252px;
+    background-color: #e1e0e0;
+    top: 50%;
+    right: 6.5%;
+    z-index: -11111;
+}
+
+/* ================right side========== */
+.blog-list form {
+    border: 1px solid #e1e0e0;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.blog-list form::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background-color: #e1e0e0;
+    right: 20%;
+}
+
+.blog-list form input {
+    border: 0;
+}
+
+.blog-list form button {
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    top: 30%;
+    right: 3%
+}
+
+.blog-list form button i {
+    color: #e1e0e0;
+}
+
+.recent-post h4 {
+    font-weight: 600;
+}
+
+.recent-post a,
+.recent-post span {
+    color: #969898;
+}
+
+.recent-post h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: #36ace1;
+    right: 0%;
+}
+
+.recent-post .underline::after {
+
+    width: 226px;
+}
+
+.category .underline::after {
+    width: 280px;
+}
+
+.tags .underline::after {
+    width: 315px;
+}
+
+.dates-line,
+.category-line {
+    position: relative;
+}
+
+.dates-line::after,
+.category-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: #e1e0e0;
+}
+
+.dates-line::after {
+
+    width: 20px;
+}
+
+.category-line::after {
+
+    width: 30px;
+    bottom: -9px;
+}
+
+.category ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category ul li a {
+    font-size: 20px;
+    color: #393939;
+}
+
+.category ul li span {
+    font-size: 16px;
+    color: #969898;
+}
+
+.tags a {
+    display: block;
+    padding: 3px 10px;
+    margin: 10px 5px;
+    border: 1px solid #e1e0e0;
+    border-radius: 5px;
+    color: #545454;
+    background-color: #ffffff;
+}
+
+.tags a:hover {
+    background-color: #36ace1;
+    color: #ffffff;
+}
+
+.tag-active {
+    background-color: #36ace1 !important;
+    color: #ffffff !important;
+}
+
+/* =================trial============== */
+.trial-bg {
+    background-color: #f9f9fa;
+}
+
+.trial-content h3 {
+    font-weight: 600;
+    color: #303030;
+}
+
+.trial-bg ul li {
+    color: #484848;
+}
+
+/* ==========================================================================
+  blog-list ===> blog-list
+   ========================================================================== */
+
+/* ==========================================================================
+  Blog-list-details
+   ========================================================================== */
+.block-content {
+    border: 1px solid #36ace1;
+    padding: 10px;
+}
+
+blockquote {
+    position: relative;
+}
+
+blockquote a {
+    color: #484848;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+blockquote::before,
+blockquote::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #ffffff;
+
+}
+
+blockquote::before {
+    left: -51px;
+}
+
+blockquote::after {
+    top: 0;
+    right: -51px;
+}
+
+.share ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.share ul li a {
+    font-size: 16px;
+    color: #393939;
+}
+
+.share ul li a i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.share ul li:nth-child(2) i {
+    color: #36ace1;
+}
+
+.share ul li:nth-child(3) i {
+    color: #d63c32;
+}
+
+.share ul li:nth-child(4) i {
+    color: #36ace1;
+}
+
+.share ul li:nth-child(5) i {
+    color: #bbbbbb;
+}
+
+.share ul li a {
+    display: block;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    border: 1px solid #e1e0e0;
+    border-radius: 5px;
+    color: #545454;
+    background-color: #ffffff;
+}
+
+.share ul li a:hover {
+    background-color: #36ace1;
+    color: #ffffff;
+}
+
+.share ul li a:hover i {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.share-active {
+    background-color: #36ace1 !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+    pagination
+   ========================================================================== */
+#leatest-post {
+    padding-bottom: 150px;
+}
+
+.post-content {
+    padding: 15px 60px 15px 30px;
+}
+
+#leatest-post .swiper-button-next {
+    top: 85%;
+    right: 43%;
+}
+
+#leatest-post .swiper-button-prev {
+    top: 85%;
+    left: 43%;
+}
+
+#leatest-post .swiper-button-prev i,
+#leatest-post .swiper-button-next i {
+    font-size: 18px;
+    margin: 0;
+}
+
+#leatest-post .swiper-button-prev,
+#leatest-post .swiper-button-next {
+    background-image: none;
+    height: 44px;
+    width: 44px;
+    border: 1px solid #e2e1e1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #39bced;
+}
+
+#leatest-post .swiper-button-prev:hover i,
+#leatest-post .swiper-button-next:hover i {
+    color: #ffffff;
+}
+
+#leatest-post .swiper-button-prev:hover,
+#leatest-post .swiper-button-next:hover {
+    color: #ffffff;
+    background-color: #39bced;
+}
+
+/* ==========================================================================
+    Comment section
+   ========================================================================== */
+.comnt-box {
+    border: 1px solid #e1e0e0;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+.comnt-box::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #e1e0e0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+}
+
+.comment .comnt-box .media-body a {
+    color: #36ace1;
+}
+
+.comment .comnt-box .media-body h4 a {
+    color: #484848;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.comment form input,
+form textarea {
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.comment form textarea {
+    border-radius: 5px;
+}
+
+.comment form button {
+    border: 0;
+}
+
+/* ==========================================================================
+  Counter section ===> home-page-3
+   ========================================================================== */
+.btm-border {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.counter h2 {
+    font-size: 40px;
+    background: linear-gradient(to right, #39bced 0%, #22499c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.counter p {
+    color: #6d6d6d;
+    font-size: 20px;
+}
+
+/* ==========================================================================
+  why use this app style
+   ========================================================================== */
+
+.why-use {
+    margin-top: 30px;
+}
+
+.hover:hover {
+    border-radius: 5px;
+    box-shadow: 0.347px 1.97px 10px 5px rgb(245, 245, 245);
+}
+
+.why-use h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* -----------------why-use for home-page-2---------------- */
+.why-use-2 {
+    background-color: #ffffff;
+}
+
+.hover:hover {
+    border-radius: 5px;
+    box-shadow: 0.347px 1.97px 10px 5px rgb(245, 245, 245);
+}
+
+.why-use-2 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.w-rotate-bg {
+    padding: 50px 0 110px 0;
+    -webkit-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg);
+    margin-bottom: -200px;
+    margin-top: -200px;
+}
+
+.w-rotate-bg .content {
+    -webkit-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
+
+/* ==========================================================================
+   awesome apps feature style
+   ========================================================================== */
+#myDiv {
+    z-index: -111;
+}
+
+.apps-feature {
+    margin-bottom: 57.5px;
+    background-color: #fafafa;
+    width: 100%;
+    background-size: cover;
+}
+
+.app-user-content a,
+.app-user-content p {
+    color: black;
+}
+
+.apps-user-tab {
+    border-left: 1px solid #36ace1;
+    margin-left: 5px;
+}
+
+.app-user {
+    position: relative;
+    margin-left: 20px;
+}
+
+.apps-screenshots {
+    padding: 50px 0;
+    margin: 50px 0 0 0;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+.start-trial {
+    border-radius: 50px;
+    border: 1px solid #e9e9e9;
+    background: url('../imgs/others/MAP.png') no-repeat center center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.active {
+    visibility: visible;
+}
+
+.app-user-content {
+    padding-left: -10px;
+}
+
+.app-user-content::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -22px;
+    width: 4px;
+    height: 0px;
+    background-color: #22499c;
+    visibility: hidden;
+    transition: 200ms all;
+    z-index: 99999;
+}
+
+.app-user:hover .app-user-content::before,
+.ui-state-active .app-user-content::before {
+    visibility: visible;
+    height: 50px;
+}
+
+.mobile-tab img {
+    transition: 1000ms;
+}
+
+.ui-state-active img {
+    transition: all ease-in-out;
+}
+
+/* =============tiny slider========== */
+
+.apps-user-tab {
+    border-left: 1px solid #36ace1;
+    position: relative;
+}
+
+.tns-controls button {
+    content: "";
+    position: absolute;
+    left: -18px;
+    cursor: pointer;
+    color: #39bced;
+    border: 1px solid #e2e1e1;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 6px 7px;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.tns-controls button:focus {
+    outline: none;
+}
+
+.tns-controls button[data-controls="prev"] {
+    top: -40px;
+}
+
+.tns-controls button[data-controls="next"] {
+    bottom: -40px;
+    padding-top: 8px;
+}
+
+.tns-controls button:hover {
+    background-color: #39bced;
+    color: #ffffff;
+    border: 0;
+}
+/* =============swiper-sider hom-page-1======= */
+.apps-feature .swiper-container {
+    position: relative;
+    padding: 100px 0;
+}
+
+.apps-feature .swiper-container::after {
+    top: 50%;
+    left: 100.3%;
+    transform: translate(-100%, -50%);
+}
+/* =============swiper-sider home-page-2 + home-page-3======= */
+
+
+.swiper-container::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-container {
+    position: relative;
+    padding: 100px 0;
+}
+
+.apps-screenshots .swiper-wrapper .swiper-slide-active {
+    transform: scale(1.02, 1.02) !important;
+    transition: .3s all ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-image: none;
+
+}
+
+.swiper-button-next i,
+.swiper-button-prev i {
+    font-size: 40px;
+    color: #2e87c8;
+
+}
+
+.swiper-button-prev i {
+    margin-left: -15px;
+}
+
+.swiper-button-next i {
+    margin-left: 25px;
+}
+
+/* ==========================================================================
+  how does this app work
+   ========================================================================== */
+
+.how-works {
+    padding-top: 57.5px;
+    padding-bottom: 100px;
+    background: url('../imgs/background/how-vdo-bg.png') no-repeat top right;
+}
+.how-works-box {
+    position: relative;
+}
+
+.how-works-box a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+/* .how-works-video i.fa-play {
+    color: blue;
+} */
+/* ---------------------------how-works-----home-page-2---------- */
+.how-works-2 {
+    padding-top: 57.5px;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #fafafa;
+    margin-bottom: 150px;
+}
+
+.how-rotate-bg: {
+    position: relative;
+}
+
+.how-rotate-bg::before {
+    content: "";
+    position: absolute;
+    background: #fafafa;
+    height: 102%;
+    width: 100%;
+    transform: skew(0deg, 7deg);
+    z-index: -1;
+    margin-top: 0px;
+    left: 0%;
+}
+
+/* ===================home-page-3------------ */
+.three-section-bg {
+    background-color: #fafafa;
+    padding: 10px 0;
+}
+
+/* ==========================================================================
+  awesome-client
+   ========================================================================== */
+.awesome-clients {
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #fafafa;
+    margin-top: 250px;
+}
+
+.clients {
+    flex-basis: 20%;
+}
+
+.awesome-client>img {
+    flex-basis: 80%;
+}
+
+.clients-rotate-bg::before {
+    content: "";
+    position: absolute;
+    background: #fafafa;
+    height: 80%;
+    width: 100%;
+    transform: skew(0deg, -7deg);
+    z-index: -1;
+    margin-top: -140px;
+    left: 0%;
+}
+
+.awesome-slider {
+    margin-top: 100px;
+}
+
+.slider>p {
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0.347px 1.97px 9.5px 0.5px rgba(51, 51, 51, 0.05);
+    border-radius: 5px;
+}
+
+.slider>p::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #ffffff;
+    top: 100%;
+    left: 10%;
+
+}
+
+.awesome-clients .tns-nav {
+    margin-left: 50px;
+}
+
+.awesome-clients .tns-outer [aria-controls],
+.tns-outer [data-action] {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background: #dcd9d9;
+    border: 0;
+    margin-left: 5px;
+}
+
+.awesome-clients .tns-nav .tns-nav-active {
+    background: #39bced;
+}
+
+.awesome-clients .tns-nav {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    z-index: 9;
+}
+
+/* ==========================================================================
+    easy pricing table
+   ========================================================================== */
+.pricing-table {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pricing-tab a {
+    padding: 15px 35px;
+    border-radius: 50px;
+}
+
+.pricing-list {
+    border: 1px solid rgb(248, 246, 246);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.347px 1.97px 10px 5px #f8f6f6;
+    background: url('../imgs/others/pricing-table-shape.png') no-repeat top left;
+    padding-top: 30px;
+}
+
+.pricing-list h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.pricing-list ul {
+    position: relative;
+}
+
+.pricing-list ul::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    width: 232px;
+    height: 1px;
+    background-color: #eaebeb;
+    transform: translateX(-50%);
+}
+
+.pricing-list ul li a {
+    font-size: 16px;
+    line-height: 32px;
+    color: #484848;
+}
+
+.pricing-list h2 {
+
+    background: linear-gradient(to right, #39bced 0%, #22499c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.pricing-list>a {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+  leatest
+   ========================================================================== */
+
+.leatest-img {
+    background-color: #f4f8fb;
+}
+
+.leatest-content {
+    border-radius: 5px;
+    box-shadow: 0.347px 1.97px 10px 5px #f7f7f7;
+}
+
+/* ============downoad app========= */
+.download-app {
+    background: url('../imgs/background/download-app-bg.png') no-repeat top left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.download-story h3 {
+    font-size: 28px;
+    line-height: 70px;
+    font-weight: bold;
+    background: linear-gradient(to right, #39bced 0%, #22499c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.download-logo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ==========stay email box========== */
+.stay-email-box form {
+    border: 1px solid #38b7e9;
+    border-radius: 50px;
+    padding: 2% 2%;
+    position: relative;
+}
+
+.stay-email-box form input {
+    border: 0;
+    padding-left: 45px;
+    /*! padding-top: 8px; */
+    background: transparent;
+}
+
+.stay-email-box form i {
+    position: absolute;
+    left: 25px;
+    color: #bbbbbb;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.stay-email-box form button {
+    border: 0;
+}
+
+/* =========footer section============ */
+footer {
+    width: 100%;
+    background: url('../imgs/background/footer-bg.png') no-repeat bottom right;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    position: relative;
+}
+
+footer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #9a9da3;
+    bottom: 25%;
+    left: 0;
+}
+
+.footer-one {
+    margin-bottom: 50px;
+}
+
+.footer-one a {
+    margin-bottom: 50px;
+}
+
+.footer-one p {
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+footer ul li a i {
+    color: #ffffff;
+}
+
+.footer-two a {
+    display: block;
+    color: #9a9da3;
+    padding: 0 0 15px 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
